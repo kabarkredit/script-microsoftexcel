@@ -1,0 +1,18 @@
+Private Sub CommandButton1_Click()
+
+    For i = 3 To 7
+    
+    Worksheets("Sheet1").Range("A1:A1000").Select
+    
+    Selection.Replace What:=Cells(i, 3).Valuem, Replacement:=Cells(i, 4).Value, _
+    LookAt:=xlPart, SearchOrder:=xlByRows, MatchCase:=False
+    
+    Next
+    
+    Worksheets("Sheet1").Cells(1, 1).Select
+    
+End Sub
+
+
+sumber
+https://www.youtube.com/watch?v=bjPxRty00QU
